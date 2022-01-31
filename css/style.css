@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     width: 100%;
-    background: gray;
+    background: #242424;
 }
 .general {
     width: 84%;
@@ -11,7 +11,9 @@ body {
     margin: 0 8%;
 }
 header {
+    background: rgba(10, 10, 10, 0.9);
     position: sticky;
+    top: 0;
 }
 .header {
     background: black;
@@ -20,18 +22,16 @@ header {
     display: flex;
     align-items: center;
     padding: 0 30px;
-    margin-bottom: 50px;
 }
 .nav {
     padding: 0 30px;
-    background: lightgray;
-
     height: 50px;
     display: flex;
     align-items: center;
     gap: 30px;
 }
 .nav li {
+    color: white;
     list-style: none;
 }
 .content {
@@ -40,19 +40,21 @@ header {
     border-radius: 20px;
     padding: 20px 0;
     height: fit-content;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .section {
     background: gray;
     padding: 0 30px;
+    flex-grow: 1;
     height: auto;
 }
 .side {
     background: lightgray;
+    min-width: 200px;
     flex-grow: 1;
     margin: 0 30px;
     height: auto;
-    /* min-width: 200px; */
 }
 .mediaTitle {
     background: lightgreen;
@@ -60,11 +62,14 @@ header {
     padding: 10px;
 }
 .media {
-    background: green;
-    height: 360px;
-    width: 640px;
+    width: 100%;
+    padding: 8px 0;
+    aspect-ratio: 16/9;
 }
 .mediaMeta {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
     background: pink;
     height: 50px;
 }
