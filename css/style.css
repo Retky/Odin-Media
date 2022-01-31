@@ -12,16 +12,25 @@ body {
 }
 header {
     background: rgba(10, 10, 10, 0.9);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     position: sticky;
     top: 0;
 }
 .header {
-    background: black;
+    background: #ff4f4f;
     color: white;
     height: 50px;
     display: flex;
+    border-bottom-left-radius: 20px;
     align-items: center;
     padding: 0 30px;
+}
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
 }
 .nav {
     padding: 0 30px;
@@ -31,35 +40,52 @@ header {
     gap: 30px;
 }
 .nav li {
-    color: white;
     list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
 }
 .content {
     flex-wrap: wrap;
-    border: solid darkgray 1px;
+    border: solid rgba(80, 80, 80, 0.75) 1px;
     border-radius: 20px;
     padding: 20px 0;
     height: fit-content;
     margin-top: 50px;
     margin-bottom: 50px;
+    justify-content: center;
 }
 .section {
-    background: gray;
-    padding: 0 30px;
+    padding: 0 30px 10px;
     flex-grow: 1;
     height: auto;
 }
 .side {
-    background: lightgray;
+    background: rgba(50, 50, 50, 0.75);
     min-width: 200px;
+    max-width: 300px;
     flex-grow: 1;
-    margin: 0 30px;
+    margin: 10px 30px 10px;
+    border-radius: 15px;
+    padding: 10px;
     height: auto;
 }
-.mediaTitle {
-    background: lightgreen;
-    font-size: 25px;
-    padding: 10px;
+.img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.img p {
+    color: white;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.mediaTitle h2 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 30px;
+    padding: 15px 30px 15px;
 }
 .media {
     width: 100%;
@@ -67,14 +93,16 @@ header {
     aspect-ratio: 16/9;
 }
 .mediaMeta {
+    color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding: 8px 0;
-    background: pink;
+    border-bottom: solid rgba(80, 80, 80, 0.75) 2px;
     height: 50px;
+    margin-bottom: 20px;
 }
 footer {
-    border-top: solid darkgray 2px;
+    border-top: solid rgba(80, 80, 80, 0.75) 2px;
     min-height: 100px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
